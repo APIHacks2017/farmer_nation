@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FarmerNation</string>
+    <string name="title_activity_splash_scrren">SplashScrrenActivity</string>
+    <string name="title_activity_signup">SignupActivity</string>
+    <string name="title_activity_sub_category">SubCategoryActivity</string>
+    <string name="title_activity_sub_sub_category">SubSubCategoryActivity</string>
+    <string name="title_activity_product_detail">ProductDetailActivity</string>
+    <string name="title_activity_product_details">ProductDetailsActivity</string>
+    <string name="title_activity_vendor_detail">VendorDetailActivity</string>
+
+</resources>

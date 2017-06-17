@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Guide_V10"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Guide_V90"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Guide_H50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layoutUser"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColorHint="@color/grey"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Guide_H50">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtUser"
+            style="@style/TextInputEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:hint="User Name"
+            android:imeOptions="actionNext"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/grey" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layoutPwd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColorHint="@color/grey"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_layoutUser">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtPwd"
+            style="@style/TextInputEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:hint="Password"
+            android:imeOptions="actionNext"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/grey" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toRightOf="@+id/Guide_V10"
+        app:layout_constraintRight_toLeftOf="@+id/Guide_V90"
+        app:layout_constraintTop_toBottomOf="@+id/input_layoutPwd">
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Farmer" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buyer" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:text="Login"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toRightOf="@+id/Guide_V10"
+        app:layout_constraintRight_toLeftOf="@+id/Guide_V90"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup1" />
+
+    <TextView
+        android:id="@+id/txtSignup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="New User ? Signup Here"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintLeft_toRightOf="@+id/Guide_V10"
+        app:layout_constraintRight_toLeftOf="@+id/Guide_V90"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1a63a7</color>
+    <color name="colorPrimaryDark">#1a63a7</color>
+    <color name="colorAccent">#1a63a7</color>
+    <color name="theme_blue">#1a63a7</color>
+    <color name="button_normal">#1a63a7</color>
+    <color name="button_pressed">#303F9F</color>
+    <color name="submit_button_normal">#303F9F</color>
+    <color name="submit_button_pressed">#1a63a7</color>
+    <color name="white">#fff</color>
+    <color name="transparent">#0fff</color>
+    <color name="black">#000</color>
+    <color name="divider_border_color">#ddd</color>
+    <color name="grey">#9E9E9E</color>
+    <color name="progress_background">#66249bff</color>
+    <color name="text_gray">#999</color>
+    <color name="indicator_current">#303F9F</color>
+    <color name="indicator_normal">#999</color>
+    <color name="yellow">#f2f24e</color>
+    <color name="pollwin_progress_background">#6624ff36</color>
+    <color name="pollwin_progress_color">#1aa728</color>
+    <color name="sky_blue">#2196F3</color>
+</resources>

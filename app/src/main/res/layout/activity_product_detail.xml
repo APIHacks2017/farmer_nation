@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sivasankar.farmernation.ProductDetailActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="@drawable/mango" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="220dp"
+        android:background="#90C5CAE9"
+        android:gravity="center"
+        android:text="Mango"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imglo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/txtName"
+        android:background="@drawable/ic_location_on_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imgDetail"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/txtName"
+        android:layout_toRightOf="@+id/imglo"
+        android:background="@drawable/ic_all_out_black_24dp" />
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/txtName"
+        android:layout_toRightOf="@+id/imgDetail"
+        android:background="@drawable/ic_apps_black_24dp" />
+</RelativeLayout>
